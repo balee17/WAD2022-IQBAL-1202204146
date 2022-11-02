@@ -40,7 +40,7 @@
                     <form action="Iqbal_mybooking.php" method="GET">
                         <div class="form-control mb-3">
                             <span class="text-secondary">Name</span>
-                            <input type="username" class="form-control mb-3" value="IQBAL_1202204146" id="name" name="name" readonly>
+                            <input type="username" class="form-control mb-3" valuue="IQBAL_1202204146" id="name" name="name" readonly>
                             <span class="text-secondary">Book Date</span>
                             <input type="date" class="form-control mb-3" id="date" name="date" required>   
                             <span class="text-secondary">Start Time</span>
@@ -57,19 +57,19 @@
                             <input type="text" class="form-control mb-3" id="phoneNumber" name="phoneNumber" required>
                             <span class="text-secondary">Add Service(s)</span><br>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input"   id="services" name="service[0]" value="Health Protocol">
+                                <input type="kbox" class="form-check-input"   id="services" name="service[0]" value="Health Protocol">
                                 <label class="form-check-label" for="flexCheckDefault">
                                 Health Protocol / Rp 35.000
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="services" name="service[1]" value="Driver">
+                                <input class="form-check-input" type="kbox" id="services" name="service[1]" value="Driver">
                                 <label class="form-check-label" for="flexCheckChecked">
                                 Driver / Rp 150.000
                                 </label>
                             </div>
                             <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox"  id="services" name="service[2]" value="Full Filled">
+                                <input class="form-check-input" type="kbox"  id="services" name="service[2]" value="Full Filled">
                                 <label class="form-check-label" for="flexCheckChecked">
                                 Full Filled / Rp 300.000
                                 </label>
