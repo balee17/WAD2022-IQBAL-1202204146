@@ -2,7 +2,7 @@
     
     if (isset($_POST['simpan'])) {
         //Include file koneksi, untuk koneksikan ke database
-        include 'connector.php';
+        include 'conn.php';
         $nama_mobil = $_REQUEST['nama_mobil'];
 		$nama_pemilik = $_REQUEST['nama_pemilik'];
 		$merk_mobil = $_REQUEST['merk_mobil'];

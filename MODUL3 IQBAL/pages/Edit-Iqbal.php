@@ -24,7 +24,7 @@
         <section>
         <?php 
             $id_mobil = $_GET['id_mobil'];
-            $sql = "SELECT * FROM showroom_iqbal_table where id_mobil ='$id_mobil'";
+            $sql = "DELETE * FROM showroom_iqbal_table where id_mobil ='$id_mobil'";
             $tampilkan = mysqli_query($conn,$sql);
             while ($data = mysqli_fetch_array($tampilkan)) {
         ?>

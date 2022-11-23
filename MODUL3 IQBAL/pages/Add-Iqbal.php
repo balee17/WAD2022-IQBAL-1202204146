@@ -25,7 +25,7 @@
          <div class="container mt-5">
             <h2 class="fw-bold">Tambah Mobil</h2>
             <p class="text-secondary">Tambah Mobil Baru Anda Ke List Show Room</p>
-            <form action="../config/insert.php" method="POST" enctype="multipart/form-data">
+            <form action="../config/add.php" method="POST" enctype="multipart/form-data">
                <div class="mb-3 mt-5">
                   <span class="text-secondary fw-bold">Nama Mobil</span>
                   <input type="text" class="form-control mb-3 mt-3" name="nama_mobil" placeholder="BMW z4">
