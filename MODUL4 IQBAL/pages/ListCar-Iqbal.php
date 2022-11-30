@@ -39,7 +39,7 @@
                 include '../config/connector.php';
                 $query = "SELECT * FROM showroom_iqbal_table ORDER BY id_mobil ASC";
                 $showdata = mysqli_query($conn,$query);
-                while ($data = mysqli_fetch_array($showdata)) {
+                while ($data = mysqli_fetch_array($shwdata)) {
             ?>
                 <div class="col-sm-3 mb-3" style="margin-left:4.5em;">
                     <div class="card shadow bg-white" style="width:400px; margin-left:20px;padding:25px 36px;">

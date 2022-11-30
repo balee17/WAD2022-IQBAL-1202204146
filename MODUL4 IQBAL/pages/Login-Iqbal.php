@@ -15,7 +15,7 @@ if(isset($_POST['login'])) {
     $email = $_POST["email"];
     $password = $_POST["password"];
 
-    $query = mysqli_query($conn, "SELECT * FROM users WHERE email = '$email'");
+    $query = mysqli_query($connn, "SELECT * FROM users WHERE email = '$email'");
 
     //$query = mysqli_query($connect, "SELECT * FROM users WHERE email = '$email'");
 
