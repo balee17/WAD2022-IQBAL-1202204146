@@ -33,7 +33,7 @@ class ShowroomsController extends Controller
     {
         $userid = User::all();
 
-        return view('showroomscreate', ['title' => 'Add','status'=>Product::all()], compact('userid'));
+        return view('showrooms.create', ['title' => 'Add','status'=>Product::all()], compact('userid'));
 
     }
 

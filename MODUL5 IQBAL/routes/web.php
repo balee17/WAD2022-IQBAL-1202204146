@@ -47,7 +47,7 @@ Route::post('/create-car', [ShowroomsController::class, 'store'])->middleware('a
 
 
 
-Route::post('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 
