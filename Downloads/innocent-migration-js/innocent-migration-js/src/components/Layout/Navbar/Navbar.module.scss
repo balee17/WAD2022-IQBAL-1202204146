@@ -1,0 +1,12 @@
+.navbar {
+  position: relative;
+  z-index: 1024;
+  display: flex;
+  align-items: center;
+  border-color: theme('colors.primary.01');
+  border-bottom-width: 2px;
+
+  @screen md {
+    height: 100px;
+  }
+}

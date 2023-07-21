@@ -1,0 +1,66 @@
+{
+  "name": "innocent",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 9011",
+    "build": "next build",
+    "start": "next start -p 9011",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged",
+    "format": "prettier --write .",
+    "lint": "eslint --ext .tsx,.ts src/ --fix",
+    "seeder": "ts-node --skip-project tasks/seeder.ts"
+  },
+  "dependencies": {
+    "@smarteye/optic": "^0.1.59",
+    "@smarteye/tailwind-optic-preset": "^0.1.18",
+    "@types/node": "20.1.0",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
+    "classnames": "^2.3.2",
+    "moment": "^2.29.4",
+    "next": "13.4.1",
+    "postcss": "8.4.23",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "redux": "^4.2.1",
+    "sass": "^1.62.1",
+    "sqlite3": "^5.1.6",
+    "typescript": "5.0.4",
+    "video-react": "^0.16.0"
+  },
+  "devDependencies": {
+    "@smarteye/browserslist-config": "^0.1.0",
+    "@smarteye/eslint-config": "^0.5.0",
+    "@smarteye/prettier-config": "^0.2.1",
+    "@smarteye/stylelint-config": "^0.2.31",
+    "@types/sqlite3": "^3.1.8",
+    "@types/video-react": "^0.15.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.2",
+    "ts-node": "^10.9.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@smarteye/eslint-config",
+      "@smarteye/eslint-config/next",
+      "@smarteye/eslint-config/ts"
+    ],
+    "ignorePatterns": [
+      "tasks/*"
+    ],
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    }
+  },
+  "prettier": "@smarteye/prettier-config",
+  "stylelint": {
+    "extends": "@smarteye/stylelint-config"
+  },
+  "browserslist": [
+    "extends @smarteye/browserslist-config"
+  ]
+}
